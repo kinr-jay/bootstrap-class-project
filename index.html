@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags from Bootstrap-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Rubik:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Script -->
+    <script
+      src="https://kit.fontawesome.com/538f0e8470.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Kinr Watch</title>
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand ms-3" href="#">Kinrwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-3 ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="watch-styles-list"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Styles
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="watch-styles-list">
+                  <li>
+                    <a class="dropdown-item" href="#styles" data-slide-to="0"
+                      >Tactical</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#styles" data-slide-to="1"
+                      >Funky</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#story">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--Title-->
+        <div class="row title-row">
+          <div class="col-lg-6 title-text">
+            <h1 class="title-heading">The ultimate timepiece for the map-and-compass explorer.</h1>
+            <button type="button" class="btn btn-dark btn-lg download-button">
+              <i class="fas fa-crosshairs"></i> Tactical
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            >
+              <i class="fas fa-music"></i> Funky
+            </button>
+          </div>
+          <div class="col-lg-6 title-img-container">
+            <img
+              class="title-img"
+              src="title-watch-img.png"
+              alt="Kinr-watch-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+
+    <section id="features">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-sun feature-icon"></i>
+          <h3 >Sunrise/Sunset Times</h3>
+          <p>
+            Know how much daylight you have left in the day to achieve your
+            goals.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-mountain feature-icon"></i>
+          <h3 >Altimeter</h3>
+          <p>
+            Knowing your elevation is a powerful tool in determining your
+            location on a printed map.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-history feature-icon"></i>
+          <h3 >Start Time Record</h3>
+          <p>
+            Record your start time to be able to estimate distances traveled.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Styles Section -->
+
+    <section id="styles">
+      <h2>Choose your style!</h2>
+      <div id="styles-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="style-slide row">
+              <div class="col-lg-4">
+                <img
+                  class="style-image"
+                  src="technical-watch-img.png"
+                  alt="tactical-style"
+                />
+              </div>
+              <div class="col-lg-8 style-text">
+                <h3>Tactical</h3>
+                <p>
+                  For the no-nonsense explorer who wants to pare down, this
+                  watch provides key information for navigation with a printed
+                  map in a classic, inconspicuous style.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="style-slide row">
+              <div class="col-lg-4">
+                <img
+                  class="style-image"
+                  src="tribal-sunset.png"
+                  alt="funky-style"
+                />
+              </div>
+              <div class="col-lg-8 style-text">
+                <h3>Funky</h3>
+                <p>
+                  Who says being a backpacker means you can't have a little
+                  fashion fun? This style allows the wearer to express a little
+                  more individuality without sacrificing technical features.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#styles-carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#styles-carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+
+    <section id="story">
+      <h2>Searching for simplicity</h2>
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img class="img-fluid" src="too-many-gadgets.png" alt="bad-gear" />
+        </div>
+        <div class="col-lg-4 d-flex flex-column text-center story-text">
+          <p class="my-auto">
+            Modern backpackers have no shortage of gadgets to stuff into their
+            various pockets, but some may relish the idea of slimming down to
+            focus on more important things. With all those technological gains,
+            they wonder what might be lost.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="img-fluid" src="map-and-compass.jpg" alt="good-gear" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+
+    <!-- <section id="card-exercise">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Card 1</h3>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <ol class="card-list">
+                <li>Thing 1</li>
+                <li>Thing 2</li>
+              </ol>
+              <button type="button" class="btn btn-block btn-outline-danger mt-auto">Danger</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Card 2</h3>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <ol class="card-list">
+                <li>Thing 1</li>
+                <li>Thing 2</li>
+              </ol>
+              <button type="button" class="btn btn-block btn-outline-warning mt-auto">Warning</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3>Card 3</h3>
+              </div>
+              <div class="card-body">
+                <ul class="card-list">
+                  <li>Something</li>
+                  <li>Something else</li>
+                  <li>One more thing</li>
+                </ul>
+                <button type="button" class="btn btn-block btn-outline-success">Totally Cool</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </section> -->
+
+    <footer id="footer">
+      <a class="social-link" href=""><i class="fab fa-facebook"></i></a>
+      <a class="social-link" href=""><i class="fab fa-instagram"></i></a>
+      <a class="social-link" href=""><i class="far fa-envelope"></i></a>
+      <p class="copyright">© Copyright 2021 Connor Jacobs</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
